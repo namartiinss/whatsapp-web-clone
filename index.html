@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Whatsapp Web Clone</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css2? família=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://kit.fontawesome.com/e6c4bba05e.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -13,21 +13,20 @@
                 <img class="user-photo" src="img/avatar1.png">
                 <div class="auxicons-toolbar-container">
                     <i class="fas fa-spinner"></i>
-                    <i class="fas ffa-comment-alt"></i>
+                    <i class="fas fa-comment-alt"></i>
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
             </div>
+
             <div class="notification-container">
                 <i class="fas fa-bell-slash"></i>
                 <p class="receive-notification">Receba notificações de novas mensagens</p>
-                <p class="activate-notification">
-                    Ativar notificações na área de trabalho
-                    <i class="fas fa-angle-right"></i>
-                </p>
+                <p class="activate-notification">Ativar notificações na área de trabalho
+                    <i class="fas fa-angle-right"></i></p>
             </div>
-            <div class="search-conatainer">
+            <div class="search-container">
                 <i id="contact-search" class="fas fa-search"></i>
-                <input type="text" name="search" id="search" placeholder="Procure ou começar uma nova conversa">
+                <input type="text" id="search" name="search" placeholder="Procure ou começar uma nova conversa">
             </div>
             <div class="contacts-container"> 
                 <div class="contact-box">
@@ -38,7 +37,6 @@
                 </div>
                 <div class="message-info">
                     <p class="message-time">22:40</p>
-                    <p class="message-pending">3</p>
                 </div>
                 <div class="contact-box">
                     <img class="user-photo" src="img/avatar3.png">
@@ -66,7 +64,7 @@
         <main class="chat-container">
             <nav class="chat-navbar">
                 <div class="contactinfo-container">
-                    <img class="user-photo" alt="img/avatar2.png">
+                    <img class="user-photo" src="img/avatar2.png">
                     <p class="user-name">Sabrina Matos</p>
                 </div>
                 <ul class="chattools-container">
@@ -77,13 +75,14 @@
             </nav>
             <div class="messages-container">
                 <div class="bg-image"></div>
-                <div class="chat-message"></div>
+                <div class="chat-message">
                     <p class="guest-message">Olá, bom dia</p>
                     <p class="user-message">Oi, tudo bem?</p>
+                </div>
             </div>
             <div class="sendmessage-container">
                 <i class="far fa-grin"></i>
-                <input type="text" name="message" class="userinput" placeholder="Digite uma mensagem">
+                <input id="chatmessage" type="text" name="message" class="userinput" placeholder="Digite uma mensagem">
                 <i class="fas fa-microphone"></i>
             </div>
         </main>
